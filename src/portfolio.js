@@ -23,7 +23,6 @@ const projects = [
     description: 'Cocobot is an innovative solution designed with a friend of mine to revolutionize content creation across platforms. This automated system takes a video uploaded to YouTube via a link and edits it to align with the algorithmic preferences of TikTok and YouTube Shorts.',
     stack: ['python', 'api', 'automation'],
     sourceCode: 'https://github.com/LeoKiefner/CocoBot-Automatic-Editing-Video-App/tree/main',
-    livePreview: 'https://github.com/LeoKiefner/CocoBot-Automatic-Editing-Video-App/tree/main',
   },
   {
     image: 'https://media.discordapp.net/attachments/1221561089632895198/1245113932096475176/file-jhpyUyMJJlaAUjdPLa7XrzeR.png?ex=66579236&is=665640b6&hm=92117ec6a47e3a1caa983c5f4ed7f14219689ad4cb66728fbf3754aa05327a31&=&format=webp&quality=lossless&width=350&height=350',
@@ -62,7 +61,15 @@ const projects = [
     image:'https://media.discordapp.net/attachments/1221561089632895198/1245453810298523718/file-MSbsc8qLhNPYfFVrf7pppKEX.png?ex=6658cebf&is=66577d3f&hm=29f876f918d33c706081639f4630db01f96ddfebcd6ecbd8df2e3775966e9813&=&format=webp&quality=lossless&width=693&height=693',
     name:'Fridgeo',
     description: 'Fridgeo is a web application that allows you to manage your fridge and your recipes. You can add, delete and update your products and recipes.',
-    stack:['Windows Form', 'C#', 'SQL']
+    stack:['Windows Form', 'C#', 'SQL'],
+    sourceCode: 'https://github.com/LeoKiefner/Fridgeo-Recipe-Finder-App',
+  },
+  {
+    image:'https://media.discordapp.net/attachments/1221561089632895198/1245455357191389214/file-gdtxx6pdH3uLsYrv4sbR7O73.png?ex=6658d030&is=66577eb0&hm=29303dcb29d9753efc5355660ffad23fbe9ce113704d0a0e4e8a605cd97a8f5a&=&format=webp&quality=lossless&width=693&height=693',
+    name:'Sudoku Solver',
+    description: 'Sudoku Solver is a simple program that solves any sudoku grid using brutforce but also human logic.',
+    stack:['C#'],
+    sourceCode:'https://github.com/LeoKiefner/SudokuSolver'
   }
 ]
 
