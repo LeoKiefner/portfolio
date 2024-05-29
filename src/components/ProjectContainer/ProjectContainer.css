@@ -1,0 +1,70 @@
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-radius: 30px;
+  transition: transform 0.2s linear;
+  opacity: 0;
+  animation: slideInFromBottom 1s forwards 1s; /* Animation d'apparition */
+}
+
+@keyframes slideInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    transform: translateY(50px);
+  }
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project_image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 1rem auto;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.3s; /* Animation d'apparition avec un délai */
+}
+
+.project__description {
+  margin-top: 1em;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.6s; /* Animation d'apparition avec un délai */
+}
+
+.project__stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.9s; /* Animation d'apparition avec un délai */
+}
+
+.project__stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--clr-fg-alt);
+  opacity: 0;
+  animation: fadeIn 1s forwards 2.2s; /* Animation d'apparition avec un délai */
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+  opacity: 0;
+  animation: fadeIn 1s forwards 2.5s; /* Animation d'apparition avec un délai */
+}

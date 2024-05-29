@@ -1,0 +1,31 @@
+.skills__list {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s; /* Animation d'apparition */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.skills__list-item {
+  margin: 0.5em;
+  opacity: 0;
+  animation: slideInFromBottom 1s forwards;
+}
+
+@keyframes slideInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    transform: translateY(50px);
+  }
+}

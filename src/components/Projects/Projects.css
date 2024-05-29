@@ -1,0 +1,15 @@
+.projects__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-gap: 2em;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s; /* Animation d'apparition */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,155 @@
+.about {
+  display: flex;
+  flex-wrap: wrap; /* Permet au contenu de prendre toute la largeur sur les petits écrans */
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3em;
+  height: 80vh;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s; /* Animation d'apparition */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%; /* 60% de la largeur totale */
+  opacity: 0;
+  animation: slideInFromLeft 1s forwards 1s; /* Animation d'apparition */
+}
+
+@keyframes slideInFromLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-50px);
+  }
+}
+
+.about__title {
+  font-size: 4.5rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.2s; /* Animation d'apparition */
+}
+
+.about__name {
+  color: var(--clr-primary);
+  align-items: center;
+  display: flex;
+  font-size: 2.4rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.4s; /* Animation d'apparition */
+}
+
+.about__role {
+  margin-top: 1.2em;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.6s; /* Animation d'apparition */
+}
+
+.about__desc {
+  font-size: 1rem;
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.8s; /* Animation d'apparition */
+}
+
+.about__desc,
+.about__contact {
+  margin-top: 2.4em;
+  width: 100%; /* Prendre toute la largeur disponible */
+}
+
+.about .link--icon {
+  margin: 0.8em;
+  opacity: 0;
+  animation: fadeIn 1s forwards 2s; /* Animation d'apparition */
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+  margin-bottom:2em;
+  opacity: 0;
+  animation: fadeIn 1s forwards 2.2s; /* Animation d'apparition */
+}
+
+.about__photo-container {
+  display: flex;
+  align-items: flex-start;
+  width: 35%; /* 35% de la largeur totale */
+  opacity: 0;
+  animation: slideInFromRight 1s forwards 2.5s; /* Animation d'apparition */
+}
+
+@keyframes slideInFromRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(50px);
+  }
+}
+
+.about__photo {
+  width: 100%; /* Prendre toute la largeur du conteneur */
+  border-radius: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-self: flex-start; /* Aligner l'image au début */
+  transition: border-radius 0.3s ease-in-out, box-shadow 0.3s ease-in-out, width 0.3s ease-in-out; /* Transition pour le rayon de bordure, l'ombre et la largeur */
+}
+
+.about__photo:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out; /* Transition pour l'ombre */
+}
+
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto; /* Ajuste la hauteur pour les petits écrans */
+  }
+
+  .about__content {
+    width: 100%; /* Prendre toute la largeur sur les petits écrans */
+    animation: slideInFromLeft 1s forwards 1s; /* Animation d'apparition */
+  }
+
+  .about__photo-container {
+    width: 100%; /* Prendre toute la largeur sur les petits écrans */
+    margin-top: 2em;
+    animation: slideInFromRight 1s forwards 2.5s; /* Animation d'apparition */
+  }
+
+  .about__photo {
+    max-width: 100%;
+    border-radius: 200px; /* Réduire le rayon de bordure sur les petits écrans */
+  }
+}
+
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 3rem;
+  }
+
+  .about__name {
+    font-size: 2rem;
+  }
+
+  .about__role {
+    font-size: 1.5rem;
+  }
+
+  .about__desc {
+    font-size: 0.9rem;
+  }
+}
